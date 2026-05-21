@@ -107,7 +107,7 @@ cd internship-registration-landing-page
 ![Form](form.png)
 
 ### 🦶 Footer
-![footer](screenshots/footer.png)
+![footer](footer.png)
 
 ---
 
