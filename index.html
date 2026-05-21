@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InternHub | Launch Your Tech Career</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-dot"></span>InternHub
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#register" class="nav-link">Register</a></li>
+            </ul>
+            <a href="#register" class="nav-cta">Apply Now</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Summer 2026 Cohort — Applications Open
+            </div>
+            <h1 class="hero-title">
+                Launch Your<br />
+                <span class="hero-highlight">Tech Career</span><br />
+                With Real Experience
+            </h1>
+            <p class="hero-subtitle">
+                Join our intensive 12-week internship program. Work on live projects,
+                get mentored by industry experts, and earn a verified certificate.
+            </p>
+            <div class="hero-actions">
+                <a href="#register" class="btn btn-primary">Register Now →</a>
+                <a href="#about" class="btn btn-ghost">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">500+</span>
+                    <span class="stat-label">Interns Placed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">12</span>
+                    <span class="stat-label">Weeks Program</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Certificate Guaranteed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">Everything You Need to<br />Kickstart Your Career</h2>
+                <p class="section-subtitle">We provide a structured, hands-on internship experience designed to make you job-ready.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card" data-delay="0">
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">Real Projects</h3>
+                    <p class="card-desc">Work on live, production-grade projects that go into your portfolio and impress recruiters.</p>
+                </div>
+                <div class="card" data-delay="100">
+                    <div class="card-icon">🎓</div>
+                    <h3 class="card-title">Expert Mentors</h3>
+                    <p class="card-desc">Get 1-on-1 guidance from senior engineers and designers with 10+ years of industry experience.</p>
+                </div>
+                <div class="card" data-delay="200">
+                    <div class="card-icon">📜</div>
+                    <h3 class="card-title">Verified Certificate</h3>
+                    <p class="card-desc">Receive an industry-recognized certificate upon completion, shareable on LinkedIn.</p>
+                </div>
+                <div class="card" data-delay="300">
+                    <div class="card-icon">💻</div>
+                    <h3 class="card-title">Skills You'll Learn</h3>
+                    <p class="card-desc">HTML, CSS, JavaScript, React, GitHub, REST APIs, and professional team collaboration.</p>
+                </div>
+                <div class="card" data-delay="400">
+                    <div class="card-icon">🌐</div>
+                    <h3 class="card-title">100% Remote</h3>
+                    <p class="card-desc">Work from anywhere. Flexible schedules designed for students and fresh graduates.</p>
+                </div>
+                <div class="card" data-delay="500">
+                    <div class="card-icon">⏱️</div>
+                    <h3 class="card-title">3-Month Duration</h3>
+                    <p class="card-desc">Structured 12-week curriculum with weekly milestones, reviews, and live sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REGISTRATION FORM ===== -->
+    <section class="register" id="register">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-left">
+                    <span class="section-tag light">Apply Now</span>
+                    <h2 class="form-heading">Start Your<br />Journey Today</h2>
+                    <p class="form-subtext">Fill in your details and our team will reach out within 2–3 business days.</p>
+                    <ul class="form-perks">
+                        <li>✔ Free to apply — no fees</li>
+                        <li>✔ Open for all skill levels</li>
+                        <li>✔ Stipend for selected candidates</li>
+                        <li>✔ Certificate for all interns</li>
+                    </ul>
+                </div>
+
+                <div class="form-right">
+                    <form id="registrationForm" novalidate>
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g. Tanvi Sharma" autocomplete="off" />
+                            <span class="error-msg" id="nameError">Please enter your full name (min. 3 characters).</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="e.g. tanvi@email.com" autocomplete="off" />
+                            <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" autocomplete="off" />
+                            <span class="error-msg" id="phoneError">Please enter a valid 10-digit phone number.</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="domain">Internship Domain <span class="required">*</span></label>
+                                <select id="domain" name="domain">
+                                    <option value="">Select a domain</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="app">App Development</option>
+                                    <option value="uiux">UI/UX Design</option>
+                                    <option value="data">Data Science</option>
+                                    <option value="marketing">Digital Marketing</option>
+                                </select>
+                                <span class="error-msg" id="domainError">Please select a domain.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="level">Experience Level <span class="required">*</span></label>
+                                <select id="level" name="level">
+                                    <option value="">Select level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                                <span class="error-msg" id="levelError">Please select your experience level.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="college">College / Institution <span class="required">*</span></label>
+                            <input type="text" id="college" name="college" placeholder="e.g. MIT College of Engineering" autocomplete="off" />
+                            <span class="error-msg" id="collegeError">Please enter your college name.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="portfolio">Portfolio / GitHub Link <span class="optional">(optional)</span></label>
+                            <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/yourusername" autocomplete="off" />
+                            <span class="error-msg" id="portfolioError">Please enter a valid URL (starting with https://).</span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" />
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" class="link">Terms & Conditions</a>
+                            </label>
+                            <span class="error-msg" id="termsError">You must agree to the terms.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" id="submitBtn">
+                            <span class="btn-text">Submit Application</span>
+                            <span class="btn-loader" id="btnLoader"></span>
+                        </button>
+
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="success-msg" id="successMsg">
+                        <div class="success-icon">🎉</div>
+                        <h3>Application Received!</h3>
+                        <p>Thank you for applying to InternHub. We'll review your profile and get back to you within 2–3 business days.</p>
+                        <button class="btn btn-primary" id="resetBtn">Apply Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-dot"></span>InternHub
+                    </a>
+                    <p>Empowering the next generation of tech professionals through real-world internship experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#register">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Domains</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">App Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Data Science</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:hello@internhub.com">hello@internhub.com</a></li>
+                            <li><a href="#">+91 98765 43210</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 InternHub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
